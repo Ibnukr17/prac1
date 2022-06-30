@@ -79,22 +79,15 @@ use Illuminate\Support\Facades\Route;
 
 // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/', function(){
-     return view('index2');
+     return view('page.index');
 });
 
 Route::get('/about', function(){
-    return view('about');
-});
-
-Route::get('/clients', function(){
-    return view('clients');
+    return view('page.about');
 });
 
 Route::get('/contact', function(){
-    return view('contact');
+    return view('page.contact');
 });
 
-Route::get('/testimonial', function(){
-    return view('testimonial');
-});
 
