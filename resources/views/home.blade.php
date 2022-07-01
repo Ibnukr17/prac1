@@ -15,6 +15,13 @@
                     @endif
 
                     {{ __('You are logged in!') }}
+
+                    <table class="table table-responsive">
+                        <tr><th>Username</th><th>:</th><td>{{ Auth::user()->username }}</td></tr>
+                        <tr><th>Name</th><th>:</th><td>{{ Auth::user()->name }}</td></tr>
+                        <tr><th>email</th><th>:</th><td>{{ Auth::user()->email }}</td></tr>
+                        <tr><th>Created At</th><th>:</th><td>{{ Auth::user()->created_at}}</td></tr>
+                    </table>
                 </div>
             </div>
         </div>
