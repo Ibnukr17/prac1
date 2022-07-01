@@ -10,4 +10,8 @@ class AboutController extends Controller
         echo 'Ibnu Khalis Rabbani <br>';
         echo '2041720159';
     }
+
+    public function index(){
+        return view('page.about');
+    }
 }
